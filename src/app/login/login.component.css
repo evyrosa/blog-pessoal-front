@@ -1,0 +1,28 @@
+.login{
+    max-width: 400px;
+    background-color: #BDB2FF
+    ;
+    height: 550px;
+    border-radius: 25px;
+    
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-color: #9BF6FF;
+}
+
+.container {
+    height: 100vh;
+    background-color: transparent;
+}
+
+.totoro {
+    background-image: url(../../assets/totoro.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+}

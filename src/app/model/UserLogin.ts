@@ -1,6 +1,6 @@
 import { Postagem } from "./Postagem"
 
-export class UserLongin {
+export class UserLogin {
     public id: number
     public nome: string
     public usuario: string

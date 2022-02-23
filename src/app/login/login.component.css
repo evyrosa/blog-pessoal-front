@@ -10,10 +10,9 @@ input:focus {
 .login{
     max-width: 400px;
     background-color: #ffffff;
-    ;
     height: 550px;
     border-radius: 0 15px 15px 0;
-    
+    box-shadow: 5px 0px 30px 7px rgba(0,0,0,0.71);
 }
 
 .background {

@@ -1,1 +1,102 @@
-<p>cadastrar works!</p>
+<div class="bg-yellow vh-100 vw-100 d-flex justify-content-center align-items-center">
+  <div class="form-container p-5">
+    <div class="w-100 d-flex justify-content-center">
+      <img
+        class="p-3"
+        src="https://img.icons8.com/external-flat-icons-maxicons/100/000000/external-ancient-archeology-flat-flat-icons-maxicons-10.png"
+      />
+    </div>
+    <form class="d-flex flex-wrap">
+      <div class="form-block">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nome"
+            name="nome"
+            aria-describedby="nomeHelp"
+            placeholder="Nome"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="foto">Foto de perfil</label>
+          <input
+            type="text"
+            class="form-control"
+            id="foto"
+            name="foto"
+            aria-describedby="fotoHelp"
+            placeholder="Link da foto"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            aria-describedby="emailHelp"
+            placeholder="Digite seu Email"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-block">
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <input
+            type="password"
+            class="form-control"
+            id="senha"
+            name="senha"
+            placeholder="Senha"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="confirmSenha">Confirmar Senha</label>
+          <input
+            type="password"
+            class="form-control"
+            id="confirmSenha"
+            name="confirmSenha"
+            placeholder="Digite novamente"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-block">
+        <div class="form-group">
+          <label for="tipo">Tipo de usuário</label>
+          <select
+            class="form-control"
+            name="tipo"
+            id="tipo"         
+          >
+            <option>Selecione um tipo de usuário:</option>
+            <option value="normal">Normal</option>
+            <option value="adm">Admin</option>
+          </select>
+        </div>
+        <div class="d-flex justify-content-around">
+          <button
+            type="submit"
+            class="btn"
+          >
+            Registrar
+          </button>
+          <button
+            routerLink="/login"
+            class="btn"
+          >
+            Cancelar
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -13,6 +13,7 @@
         <div class="form-group">
           <label for="nome">Nome</label>
           <input
+            [(ngModel)]='user.nome'
             type="text"
             class="form-control"
             id="nome"
@@ -25,6 +26,7 @@
         <div class="form-group">
           <label for="foto">Foto de perfil</label>
           <input
+            [(ngModel)]='user.foto'
             type="text"
             class="form-control"
             id="foto"
@@ -35,12 +37,13 @@
           />
         </div>
         <div class="form-group">
-          <label for="email">Email</label>
+          <label for="usuario">Email</label>
           <input
+            [(ngModel)]='user.usuario'
             type="email"
             class="form-control"
-            id="email"
-            name="email"
+            id="usuario"
+            name="usuario"
             aria-describedby="emailHelp"
             placeholder="Digite seu Email"
             required
@@ -51,6 +54,7 @@
         <div class="form-group">
           <label for="senha">Senha</label>
           <input
+            (input)="confirmarSenha($event)"
             type="password"
             class="form-control"
             id="senha"
@@ -62,6 +66,7 @@
         <div class="form-group">
           <label for="confirmSenha">Confirmar Senha</label>
           <input
+            [(ngModel)]='user.senha'
             type="password"
             class="form-control"
             id="confirmSenha"
@@ -78,6 +83,7 @@
             class="form-control"
             name="tipo"
             id="tipo"
+            (change)="tipoUser($event)"
           >
             <option>Selecione um tipo de usuário:</option>
             <option value="normal">Normal</option>
@@ -86,6 +92,7 @@
         </div>
         <div class="d-flex justify-content-around">
           <div
+            (click)="cadastrar($event)"
             type="submit"
             class="btn rounded-circle btn-yellow"
           >

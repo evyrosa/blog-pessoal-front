@@ -16,15 +16,11 @@
 }
 
 .fa{
-    font-size:40pt;
-    font-weight: 100;
+    position: absolute;
+    font-size:50pt;
     color: #EEDE1C;
-}
-
-
-.fa::before {
-  background-color: #111111;
-  border-radius: 50%;
+    top: -10px;
+    left: -10px;
 }
 
 input {
@@ -34,4 +30,11 @@ input {
 input:focus {
     background-color: #EEDE1C;
     border: solid 2pt #111111 !important;
+}
+
+.btn-yellow {
+  position: relative;
+  background-color: #111;
+  width: 45px;
+  height: 45px;
 }

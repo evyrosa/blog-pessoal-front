@@ -2,17 +2,20 @@ input {
     border-radius: 0 8px 8px 0;
 }
 
-input:focus {
+.form-control:focus {
     background-color: #EEDE1C;
-    border: solid 2pt #111111 !important;
+    outline-color: #111111 !important;
+    outline-style: solid;
+
 }
 
 .login{
-    max-width: 400px;
+    max-width: 500px;
     background-color: #ffffff;
-    height: 550px;
-    border-radius: 0 15px 15px 0;
     box-shadow: 5px 0px 30px 7px rgba(0,0,0,0.71);
+    height: fit-content;
+    width: 350px;
+    border-radius: 0 15px 15px 0;
 }
 
 .background {
@@ -33,4 +36,20 @@ input:focus {
     background-position: center;
     height: 200px;
     width: 100%;
+}
+
+.fa{
+    font-size:30pt;
+    font-weight: 100;
+    color: #111111;
+}
+
+.fa::before {
+  background-color: #EEDE1C;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.font-size {
+  font-size: 11pt;
 }

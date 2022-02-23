@@ -12,6 +12,19 @@
 .form-block {
     padding: 20px;
     min-width: 250px;
+    min-height: 310px;
+}
+
+.fa{
+    font-size:40pt;
+    font-weight: 100;
+    color: #EEDE1C;
+}
+
+
+.fa::before {
+  background-color: #111111;
+  border-radius: 50%;
 }
 
 input {

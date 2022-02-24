@@ -3,3 +3,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+.bg-yellow {
+  background-color: #eede1c;
+  min-height: 100vh;
+  height: fit-content;
+}

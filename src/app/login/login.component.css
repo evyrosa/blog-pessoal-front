@@ -19,8 +19,8 @@ input {
 }
 
 .background {
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
     background-color: #EEDE1C;
 }
 
